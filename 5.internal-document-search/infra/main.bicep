@@ -116,7 +116,7 @@ module appServicePlan 'core/host/appserviceplan.bicep' = {
     location: location
     tags: tags
     sku: {
-      name: 'S1'
+      name: 'B1'
       capacity: 1
     }
     kind: 'linux'
@@ -176,7 +176,7 @@ module openAi 'core/ai/cognitiveservices.bicep' = {
         }
         sku: {
           name: 'Standard'
-          capacity: 120
+          capacity: 10
         }
       }
       {
@@ -188,7 +188,7 @@ module openAi 'core/ai/cognitiveservices.bicep' = {
         }
         sku: {
           name: 'Standard'
-          capacity: 120
+          capacity: 10
         }
       }
     ]
